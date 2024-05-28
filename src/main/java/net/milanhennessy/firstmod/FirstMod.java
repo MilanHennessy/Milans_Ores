@@ -1,6 +1,11 @@
 package net.milanhennessy.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.milanhennessy.firstmod.block.ModBlocks;
+import net.milanhennessy.firstmod.item.CreativeTabs;
+import net.milanhennessy.firstmod.item.Moditems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +32,12 @@ public class FirstMod
     public FirstMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        CreativeTabs.register(modEventBus);
+
+        Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -41,7 +52,6 @@ public class FirstMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
