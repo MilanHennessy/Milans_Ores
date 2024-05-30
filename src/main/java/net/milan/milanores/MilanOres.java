@@ -1,11 +1,9 @@
-package net.milanhennessy.firstmod;
+package net.milan.milanores;
 
 import com.mojang.logging.LogUtils;
-import net.milanhennessy.firstmod.block.ModBlocks;
-import net.milanhennessy.firstmod.item.CreativeTabs;
-import net.milanhennessy.firstmod.item.Moditems;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.milan.milanores.item.Moditems;
+import net.milan.milanores.block.ModBlocks;
+import net.milan.milanores.item.CreativeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -21,15 +19,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(FirstMod.MODID)
-public class FirstMod
+@Mod(MilanOres.MODID)
+public class MilanOres
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "firstmod";
+    public static final String MODID = "milanores";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public FirstMod()
+    public MilanOres()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

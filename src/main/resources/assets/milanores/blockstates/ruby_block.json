@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "milanores:block/ruby_block"
+    }
+  }
+}

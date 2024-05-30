@@ -1,7 +1,7 @@
-package net.milanhennessy.firstmod.block;
+package net.milan.milanores.block;
 
-import net.milanhennessy.firstmod.FirstMod;
-import net.milanhennessy.firstmod.item.Moditems;
+import net.milan.milanores.MilanOres;
+import net.milan.milanores.item.Moditems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, FirstMod.MODID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, MilanOres.MODID);
 
     public static final RegistryObject<Block> RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK), UniformInt.of(3, 6)));

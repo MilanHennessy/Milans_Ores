@@ -8,10 +8,10 @@
   ],
   "key": {
     "#": {
-      "item": "firstmod:ruby"
+      "item": "milanores:ruby"
     }
   },
   "result": {
-    "item": "firstmod:ruby_block"
+    "item": "milanores:ruby_block"
   }
 }

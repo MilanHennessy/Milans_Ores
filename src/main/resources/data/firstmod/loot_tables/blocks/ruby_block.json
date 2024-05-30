@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "firstmod:ruby_block"
+          "name": "milanores:ruby_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "firstmod:blocks/ruby_block"
+  "random_sequence": "milanores:blocks/ruby_block"
 }
