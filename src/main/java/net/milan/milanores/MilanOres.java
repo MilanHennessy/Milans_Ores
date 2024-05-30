@@ -1,7 +1,7 @@
 package net.milan.milanores;
 
 import com.mojang.logging.LogUtils;
-import net.milan.milanores.item.Moditems;
+import net.milan.milanores.item.ModItems;
 import net.milan.milanores.block.ModBlocks;
 import net.milan.milanores.item.CreativeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,7 +33,7 @@ public class MilanOres
 
         CreativeTabs.register(modEventBus);
 
-        Moditems.register(modEventBus);
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

@@ -15,10 +15,10 @@ public class CreativeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MilanOres.MODID);
 
     public static final RegistryObject<CreativeModeTab> CREATIVE_TAB = CREATIVE_MODE_TABS.register("milan_ores",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.RUBY.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RUBY.get()))
                     .title(Component.translatable("Milan Ores"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(Moditems.RUBY.get());
+                        pOutput.accept(ModItems.RUBY.get());
                         pOutput.accept(ModBlocks.RAW_RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
 
