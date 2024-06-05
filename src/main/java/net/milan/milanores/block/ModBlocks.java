@@ -24,10 +24,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_TOPAZ_BLOCK = registerBlock("raw_topaz_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK), UniformInt.of(1, 2)));
 
+    public static final RegistryObject<Block> RAW_DEEPSLATE_TOPAZ_BLOCK = registerBlock("raw_deepslate_topaz_block",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE), UniformInt.of(2, 2)));
+
     /*
     Credits For Textures: https://www.youtube.com/watch?v=o6Xbp2dTEGA&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-&index=2&t=781s
      */
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+
+    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

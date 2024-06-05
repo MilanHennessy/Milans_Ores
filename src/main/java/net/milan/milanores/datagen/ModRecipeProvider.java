@@ -30,9 +30,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TOPAZ_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.TOPAZ.get())
+                .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
+                .save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RUBY.get(), 9)
                 .requires(ModBlocks.RUBY_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RUBY_BLOCK.get()), has(ModBlocks.RUBY_BLOCK.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 9)
+                .requires(ModBlocks.TOPAZ_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.TOPAZ_BLOCK.get()), has(ModBlocks.TOPAZ_BLOCK.get()))
                 .save(recipeOutput);
 
     }

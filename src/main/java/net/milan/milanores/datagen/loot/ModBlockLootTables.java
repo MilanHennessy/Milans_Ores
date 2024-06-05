@@ -17,8 +17,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.TOPAZ_BLOCK.get());
+
         this.dropOther(ModBlocks.RAW_RUBY_BLOCK.get(), ModItems.RUBY.get());
         this.dropOther(ModBlocks.RAW_TOPAZ_BLOCK.get(), ModItems.TOPAZ.get());
+        this.dropOther(ModBlocks.RAW_DEEPSLATE_TOPAZ_BLOCK.get(), ModItems.TOPAZ.get());
     }
 
     @Override

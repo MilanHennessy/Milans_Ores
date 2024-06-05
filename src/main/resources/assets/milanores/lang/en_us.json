@@ -2,5 +2,8 @@
   "item.milanores.ruby": "Ruby",
   "item.milanores.topaz": "Topaz",
   "block.milanores.raw_ruby_block": "Ruby Ore",
-  "block.milanores.ruby_block": "Ruby Block"
+  "block.milanores.raw_topaz_block": "Topaz Ore",
+  "block.milanores.raw_deepslate_topaz_block": "Deepslate Topaz Ore",
+  "block.milanores.ruby_block": "Ruby Block",
+  "block.milanores.topaz_block": "Topaz Block"
 }
