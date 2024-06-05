@@ -19,6 +19,7 @@ public class CreativeTabs {
                     .title(Component.translatable("Milan Ores"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUBY.get());
+                        pOutput.accept(ModItems.TOPAZ.get());
                         pOutput.accept(ModBlocks.RAW_RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
 

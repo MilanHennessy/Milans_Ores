@@ -28,7 +28,7 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> netherRubyOres = List.of(OreConfiguration.target(netherrackReplacables,
                 ModBlocks.RAW_RUBY_BLOCK.get().defaultBlockState()));
 
-        register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherRubyOres, 9));
+        register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherRubyOres, 6));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

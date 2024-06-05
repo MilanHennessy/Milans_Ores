@@ -20,6 +20,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> RAW_TOPAZ_BLOCK = registerBlock("raw_topaz_block",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK), UniformInt.of(1, 2)));
+
     /*
     Credits For Textures: https://www.youtube.com/watch?v=o6Xbp2dTEGA&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-&index=2&t=781s
      */
