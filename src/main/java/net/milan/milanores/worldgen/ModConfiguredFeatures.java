@@ -20,15 +20,24 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> NETHER_RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?,?>> TOPAZ_ORE_KEY = registerKey("topaz_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
-        RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherrackReplacables = new BlockMatchTest(Blocks.NETHERRACK);
+
+        List<OreConfiguration.TargetBlockState> overworldTopazOres = List.of(OreConfiguration.target(stoneReplaceables,
+                ModBlocks.RAW_TOPAZ_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables,
+                ModBlocks.RAW_DEEPSLATE_TOPAZ_BLOCK.get().defaultBlockState()));
 
         List<OreConfiguration.TargetBlockState> netherRubyOres = List.of(OreConfiguration.target(netherrackReplacables,
                 ModBlocks.RAW_RUBY_BLOCK.get().defaultBlockState()));
 
+        register(context, TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTopazOres, 9));
         register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherRubyOres, 6));
+
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
