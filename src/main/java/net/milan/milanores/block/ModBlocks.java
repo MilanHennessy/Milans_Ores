@@ -39,6 +39,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
 
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

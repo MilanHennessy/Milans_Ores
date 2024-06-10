@@ -38,6 +38,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TOPAZ.get()), has(ModItems.TOPAZ.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RUBY.get(), 9)
                 .requires(ModBlocks.RUBY_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RUBY_BLOCK.get()), has(ModBlocks.RUBY_BLOCK.get()))
@@ -46,6 +54,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TOPAZ.get(), 9)
                 .requires(ModBlocks.TOPAZ_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.TOPAZ_BLOCK.get()), has(ModBlocks.TOPAZ_BLOCK.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
+                .requires(ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(recipeOutput);
 
     }

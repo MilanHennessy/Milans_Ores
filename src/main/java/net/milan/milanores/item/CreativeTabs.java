@@ -27,6 +27,7 @@ public class CreativeTabs {
                         pOutput.accept(ModBlocks.RAW_ENDSTONE_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.TOPAZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
 
                     })
                     .build());
