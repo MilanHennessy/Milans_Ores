@@ -28,6 +28,7 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherrackReplacables = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
         List<OreConfiguration.TargetBlockState> overworldTopazOres = List.of(OreConfiguration.target(stoneReplaceables,
                 ModBlocks.RAW_TOPAZ_BLOCK.get().defaultBlockState()),
@@ -37,11 +38,14 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> netherRubyOres = List.of(OreConfiguration.target(netherrackReplacables,
                 ModBlocks.RAW_RUBY_BLOCK.get().defaultBlockState()));
 
+        List<OreConfiguration.TargetBlockState> endSapphireOres = List.of(OreConfiguration.target(endReplaceables,
+                ModBlocks.RAW_ENDSTONE_SAPPHIRE_BLOCK.get().defaultBlockState()));
 
 
 
         register(context, TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTopazOres, 9));
         register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherRubyOres, 6));
+        register(context, END_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(endSapphireOres, 4));
 
     }
 
