@@ -21,6 +21,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_RUBY_BLOCK);
         blockWithItem(ModBlocks.RAW_TOPAZ_BLOCK);
         blockWithItem(ModBlocks.RAW_DEEPSLATE_TOPAZ_BLOCK);
+        blockWithItem(ModBlocks.RAW_ENDSTONE_SAPPHIRE_BLOCK);
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -22,6 +22,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropOther(ModBlocks.RAW_RUBY_BLOCK.get(), ModItems.RUBY.get());
         this.dropOther(ModBlocks.RAW_TOPAZ_BLOCK.get(), ModItems.TOPAZ.get());
         this.dropOther(ModBlocks.RAW_DEEPSLATE_TOPAZ_BLOCK.get(), ModItems.TOPAZ.get());
+        this.dropOther(ModBlocks.RAW_ENDSTONE_SAPPHIRE_BLOCK.get(), ModItems.SAPPHIRE.get());
+
     }
 
     @Override

@@ -14,10 +14,16 @@ public class ModItems {
     Texture used Credits: https://minecraft-archive.fandom.com/wiki/Ruby
     */
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", () -> new Item(new Item.Properties()));
+
     /*
     Texture used Credits: https://imgur.com/BeWMStz
      */
     public static final RegistryObject<Item> TOPAZ = ITEMS.register("topaz", () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

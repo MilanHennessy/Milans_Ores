@@ -19,6 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.RUBY);
         simpleItem(ModItems.TOPAZ);
+        simpleItem(ModItems.SAPPHIRE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

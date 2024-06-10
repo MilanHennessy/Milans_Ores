@@ -27,6 +27,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_DEEPSLATE_TOPAZ_BLOCK = registerBlock("raw_deepslate_topaz_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE), UniformInt.of(2, 2)));
 
+    public static final RegistryObject<Block> RAW_ENDSTONE_SAPPHIRE_BLOCK = registerBlock("raw_endstone_sapphire_block",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE), UniformInt.of(2, 7)));
+
     /*
     Credits For Textures: https://www.youtube.com/watch?v=o6Xbp2dTEGA&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-&index=2&t=781s
      */

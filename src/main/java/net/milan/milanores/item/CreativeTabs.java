@@ -20,9 +20,11 @@ public class CreativeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUBY.get());
                         pOutput.accept(ModItems.TOPAZ.get());
+                        pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModBlocks.RAW_RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_TOPAZ_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_DEEPSLATE_TOPAZ_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_ENDSTONE_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.TOPAZ_BLOCK.get());
 
